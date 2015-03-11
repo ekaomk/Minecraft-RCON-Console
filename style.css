@@ -1,0 +1,50 @@
+body {
+    background: url("res/bg.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    line-height: 1.6em; /* fix for thai font*/
+}
+
+
+html, body {
+    height: 100%;
+}
+
+
+.content {
+    height: 100%;
+    position: relative;
+
+}
+
+.container-fluid{
+	min-height: 100%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#groupConsole{
+	height: 300px;
+    overflow: auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #CAE4FA;
+    border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #428bca;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1D74BF;
+}
