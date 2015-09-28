@@ -1,12 +1,21 @@
 $( document ).ready(function() {
+	
+	var lastCommand = "";
+	
 	$("#txtCommand").bind("enterKey",function(e){
-		sendCommand($("#txtCommand").val());
+		lastCommand = $("#txtCommand").val();
+		sendCommand(lastCommand);
 	});
 
 	$("#txtCommand").keyup(function(e){
     if(e.keyCode == 13)
     {
       $(this).trigger("enterKey");
+	  $(this).val("");
+    }
+	if(e.keyCode == 38)
+    {
+	  $(this).val(lastCommand);
     }
   });
 
