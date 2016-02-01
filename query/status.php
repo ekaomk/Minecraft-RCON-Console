@@ -109,29 +109,11 @@ This file is part of Minecraft-RCON-Console.
 			//////////////////////////////////////////////////////
 			echo "<br>";
 
-			$params="case=getplayers";
-
-			$ch = curl_init( $url );
-			curl_setopt( $ch, CURLOPT_POST, 1);
-			curl_setopt( $ch, CURLOPT_POSTFIELDS, $params);
-			curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
-			curl_setopt( $ch, CURLOPT_HEADER, 0);
-			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
-
-			$purejson = curl_exec( $ch );
-
-			$allPlayer = "";
-			$json = json_decode($purejson);
-			if($json != false){
-				foreach ($json as &$value) {
-					$allPlayer .= $value;
-					$allPlayer .= ",";
-				}
+			echo "Name of current players online : ";
+			foreach ($json->players as $key => $value) {
+				echo $value;
+				if($key != count($json->players) - 1) echo ', ';
 			}
-
-			$allPlayer = rtrim($allPlayer, ",");
-
-			echo "Name of current players online : ". $allPlayer;
 
 			?>
 		</div>
