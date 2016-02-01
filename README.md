@@ -27,7 +27,7 @@
 * List all name of current player online.
 
 #Setting up
-1. Download/Clone source file on Bitbucket.
+1. Download/Clone source file
 2. Edit "config.php" (port number and RCON password on you.)
 ```php
 $rconHost = "localhost";
