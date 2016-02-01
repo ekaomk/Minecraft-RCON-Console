@@ -1,7 +1,17 @@
 # Minecrafe RCON Console
 #####Tool for send server command via RCON protocal of minecraft server by website.
 
+![alt tag](https://github.com/ekaomk/Minecraft-RCON-Console/blob/master/screenshot/pc.jpg)
+
+![alt tag](https://cdn.rawgit.com/ekaomk/Minecraft-RCON-Console/master/screenshot/mobile.png)
+
 ### Version
+
+#####2.1
+* Change query library.
+* Fix responsive on mobile.
+* Update jquery version.
+* Update bootstrap version.
 
 #####2.0
 * Responsive design.

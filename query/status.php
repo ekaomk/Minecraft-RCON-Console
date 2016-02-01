@@ -45,7 +45,7 @@ This file is part of Minecraft-RCON-Console.
 		<div class="list-group-item list-group-item-info">
 
 			<?php
-			$url = 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/index.php';
+			$url = 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/api.php';
 			$params= 'case=getinfo';
 
 			$ch = curl_init( $url );
@@ -67,14 +67,14 @@ This file is part of Minecraft-RCON-Console.
 
 			$json = json_decode($purejson);
 
-			echo format("Host Name : {0}{1}", $json->HostName, "<br>");
-			echo format("Game Type : {0}{1}", $json->GameType, "<br>");
-			echo format("Version : {0}{1}", $json->Version, "<br>");
-			echo format("Plugins : {0}{1}", $json->Plugins[0], "<br>");
-			echo format("Map Name : {0}{1}", $json->Map, "<br>");
-			$division = $json->Players / $json->MaxPlayers;
+			echo format("Host Name : {0}{1}", $json->hostname, "<br>");
+			echo format("Game Type : {0}{1}", $json->gametype, "<br>");
+			echo format("Version : {0}{1}", $json->version, "<br>");
+			echo format("Plugins : {0}{1}", $json->plugins, "<br>");
+			echo format("Map Name : {0}{1}", $json->map, "<br>");
+			$division = $json->numplayers / $json->maxplayers;
 			$percent = $division * 100;
-			echo format("Online : {0} / {1} ({2}%){3}", $json->Players, $json->MaxPlayers, $percent, "<p>");
+			echo format("Online : {0} / {1} ({2}%){3}", $json->numplayers, $json->maxplayers, $percent, "<p>");
 
 			$progressClass = "progress-bar";
 			if($percent > 80) $progressClass = "progress-bar progress-bar-danger";
@@ -83,11 +83,11 @@ This file is part of Minecraft-RCON-Console.
 				<div class='{0}' role='progressbar' aria-valuenow='{1}' aria-valuemin='0' aria-valuemax='{2}' style='width: {3}%;'>
 				<span class='sr-only'>{3}% Complete</span>
 				</div>
-				</div>", $progressClass, $json->Players, $json->MaxPlayers, $percent);
+				</div>", $progressClass, $json->numplayers, $json->maxplayers, $percent);
 
-			echo format("Host Port : {0}{1}", $json->HostPort, "<br>");
-			echo format("Host IP : {0}{1}", $json->HostIp, "<br>");
-			echo format("Software : {0}{1}", $json->Software, "<br>");
+			echo format("Host Port : {0}{1}", $json->hostport, "<br>");
+			echo format("Host IP : {0}{1}", $json->hostip, "<br>");
+			//echo format("Software : {0}{1}", $json->Software, "<br>");
 
 
 

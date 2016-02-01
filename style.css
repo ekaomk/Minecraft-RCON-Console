@@ -1,5 +1,5 @@
 body {
-    background: url("res/bg.jpg") no-repeat center center fixed; 
+    background: url("res/bg.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -12,11 +12,13 @@ html, body {
     height: 100%;
 }
 
+.console, .status{
+  margin-bottom: 5%;
+}
 
 .content {
     height: 100%;
     position: relative;
-
 }
 
 .container-fluid{
