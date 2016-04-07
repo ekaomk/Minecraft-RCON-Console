@@ -66,7 +66,9 @@ This file is part of Minecraft-RCON-Console.
 			}
 
 			$json = json_decode($purejson);
-
+			
+			echo format("Host Port : {0}{1}", $json->hostport, "<br>");
+			echo format("Host IP : {0}{1}", $json->hostip, "<br>");
 			echo format("Description : {0}{1}", $json->description, "<br>");
 			echo format("Game Type : {0}{1}", $json->gametype, "<br>");
 			echo format("Version : {0}{1}", $json->version, "<br>");
@@ -85,8 +87,7 @@ This file is part of Minecraft-RCON-Console.
 				</div>
 				</div>", $progressClass, $json->numplayers, $json->maxplayers, $percent);
 
-			echo format("Host Port : {0}{1}", $json->hostport, "<br>");
-			echo format("Host IP : {0}{1}", $json->hostip, "<br>");
+
 			//echo format("Software : {0}{1}", $json->Software, "<br>");
 
 
