@@ -180,6 +180,7 @@ class Query {
 			list($key, $value) = $pair;
 			//strip possible color format codes from hostname
 			if ($key == "hostname") {
+				$key = 'description';
 				$value = $this->strip_color_codes($value);
 			}
 			$info[$key] = $value;
@@ -194,7 +195,7 @@ class Query {
 
 		//attach player data to info for simplicity
 		$info['players'] = $players;
-
+		$info['hostip'] = gethostbyname($this->host);
 		return $info;
 	}
 
