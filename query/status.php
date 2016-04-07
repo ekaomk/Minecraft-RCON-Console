@@ -67,7 +67,7 @@ This file is part of Minecraft-RCON-Console.
 
 			$json = json_decode($purejson);
 
-			echo format("Host Name : {0}{1}", $json->hostname, "<br>");
+			echo format("Description : {0}{1}", $json->description, "<br>");
 			echo format("Game Type : {0}{1}", $json->gametype, "<br>");
 			echo format("Version : {0}{1}", $json->version, "<br>");
 			echo format("Plugins : {0}{1}", $json->plugins, "<br>");
@@ -110,6 +110,9 @@ This file is part of Minecraft-RCON-Console.
 			echo "<br>";
 
 			echo "Name of current players online : ";
+			if(empty($json->players)){
+				echo "No players online";
+			}
 			foreach ($json->players as $key => $value) {
 				echo $value;
 				if($key != count($json->players) - 1) echo ', ';
