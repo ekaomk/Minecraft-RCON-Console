@@ -1,5 +1,5 @@
 # Minecrafe RCON Console
-#####Tool for send server command via RCON protocal of minecraft server by website.
+##### Tool for send server command via RCON protocal of minecraft server by website.
 
 ![alt tag](https://github.com/ekaomk/Minecraft-RCON-Console/blob/master/screenshot/pc.jpg)
 
@@ -7,13 +7,13 @@
 
 ### Version
 
-#####2.1
+##### 2.1
 * Change query library.
 * Fix responsive on mobile.
 * Update jquery version.
 * Update bootstrap version.
 
-#####2.0
+##### 2.0
 * Responsive design.
 * Change theme.
 * Fix file path.
@@ -21,12 +21,12 @@
 * Update jquery version.
 * Update bootstrap version.
 
-#####1.0
+##### 1.0
 * Send command to server directly.
 * Show server status and number of current player online.
 * List all name of current player online.
 
-#Setting up
+# Setting up
 1. Download/Clone source file
 2. Edit "config.php" (port number and RCON password on you.)
 ```php
