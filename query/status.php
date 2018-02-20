@@ -57,11 +57,11 @@ This file is part of Minecraft-RCON-Console.
 
 			$purejson = curl_exec( $ch );
 			if($purejson != null) {
-				echo "Server status : Online<br>";
+				echo "Server status: Online<br>";
 			}
 			else
 			{
-				echo "Server status : Offline<br>";
+				echo "Server status: Offline<br>";
 				return;
 			}
 
