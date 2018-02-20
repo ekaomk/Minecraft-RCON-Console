@@ -15,6 +15,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Minecraft-RCON-Console.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+require 'config.php';
 ?>
 
 <!DOCTYPE HTML>
@@ -49,6 +51,7 @@ along with Minecraft-RCON-Console.  If not, see <http://www.gnu.org/licenses/>.
 	<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 	<div class="container-fluid content" style="padding-top: 15px;">
 		<div class="alert alert-info" id="alertMessenge">Welcome to Minecraft RCON Console.</div>
+		<div class="alert alert-info"><center><?php echo $serverName; ?></center></div>
 		<div class="row">
 			<div class="col-md-8 col-lg-8 console">
 				<div class="panel panel-primary" >
