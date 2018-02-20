@@ -56,7 +56,7 @@ This file is part of Minecraft-RCON-Console.
 			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 
 			$purejson = curl_exec( $ch );
-			if($purejson != "Failed to receive challenge.") {
+			if($purejson != null) {
 				echo "Server status : Online<br>";
 			}
 			else
