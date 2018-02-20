@@ -16,6 +16,8 @@ This file is part of Minecraft-RCON-Console.
     along with Minecraft-RCON-Console.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+$serverName = "My Server";
+
 $rconHost = "localhost";
 $rconPort = 25575;
 $rconPassword = "rconpassword";
