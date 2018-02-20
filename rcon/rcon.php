@@ -40,11 +40,12 @@ class Rcon {
 
 	public function connect() {
 
-		$this->socket = fsockopen($this->host, $this->port, $errno, $errstr, $this->timeout);
+		@$this->socket = fsockopen($this->host, $this->port, $errno, $errstr, $this->timeout);
 
 		if (!$this->socket)
 		{
-		  $this->last_response = $errstr;
+			$this->last_response = $errstr;
+			echo 'Server is offline.';
 			return false;
 		}
 
