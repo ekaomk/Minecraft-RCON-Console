@@ -97,7 +97,7 @@ require 'config.php';
 				</div>
 				<div class="panel panel-default">
 					<div class="panel-body">
-						Minecraft RCON Console 1.1 | Develop by ekaomk
+						Minecraft RCON Console <?php echo $mcrconVersion; ?> | Develop by ekaomk
 					</div>
 				</div>
 

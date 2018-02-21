@@ -17,6 +17,7 @@ This file is part of Minecraft-RCON-Console.
 */
 
 $serverName = "My Server";
+$mcrconVersion = "2.1";
 
 $rconHost = "localhost";
 $rconPort = 25575;
