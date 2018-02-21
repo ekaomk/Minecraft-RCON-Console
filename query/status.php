@@ -45,7 +45,12 @@ This file is part of Minecraft-RCON-Console.
 		<div class="list-group-item list-group-item-info">
 
 			<?php
-			$url = 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/api.php';
+			if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
+			    $url_protocol  = "https";
+			} else {
+			    $url_protocol  = "http";
+			}
+			$url = $url_protocol . '://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/api.php';
 			$params= 'case=getinfo';
 
 			$ch = curl_init( $url );
