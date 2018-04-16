@@ -1,4 +1,4 @@
-# Minecrafe RCON Console
+# Minecraft RCON Console
 ##### Tool for send server command via RCON protocal of minecraft server by website.
 
 ![alt tag](https://github.com/ekaomk/Minecraft-RCON-Console/blob/master/screenshot/pc.jpg)
