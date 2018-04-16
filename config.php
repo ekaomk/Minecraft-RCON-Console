@@ -24,5 +24,5 @@ $rconPassword = "rconpassword";
 
 $queryHost = "localhost";
 $queryPort = 25585;
-
+require(__DIR__ . "/authsys.php");
 ?>
