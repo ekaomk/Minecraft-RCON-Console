@@ -1,4 +1,4 @@
-# Minecrafe RCON Console
+# Minecraft RCON Console
 ##### Tool for send server command via RCON protocal of minecraft server by website.
 
 ![alt tag](https://github.com/ekaomk/Minecraft-RCON-Console/blob/master/screenshot/pc.jpg)
@@ -36,8 +36,9 @@ $rconPassword = "rconpassword";
 $queryHost = "localhost";
 $queryPort = 25585;
 ```
-3. Upload all file to your server.
-4. Edit your "server.properties" file.
+3. Edit "authsys.php" to create accounts (information in file) - the default username is `admin`, default password `1234abcd`
+4. Upload all file to your server.
+5. Edit your "server.properties" file.
 add (port number and RCON password on you.)
 ```
 query.port=25585
@@ -49,5 +50,5 @@ and change
 enable-rcon=true
 enable-query=true
 ```
-5. Restart your server.
-6. Done.
+6. Restart your server.
+7. Done.
