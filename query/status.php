@@ -24,8 +24,8 @@ This file is part of Minecraft-RCON-Console.
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Minecraft RCON Console</title>
 
-	<script src="../assets/js/jquery-1.11.0.min.js"></script>
-	<script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="../assets/js/jquery/jquery-1.11.0.min.js"></script>
+	<script src="../assets/js/jquery/jquery-migrate-1.2.1.min.js"></script>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="../assets/css/bootstrap/3.1.1/bootstrap.min.css">
